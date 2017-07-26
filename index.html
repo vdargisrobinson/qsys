@@ -16,7 +16,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="description" content="" />
-<meta name="author" content="" />  <link rel="canonical" href="https://quinntessentialsystemsinc.freshdesk.com/support/solutions" /> 
+<meta name="Shane Quinn" content="" />  <link rel="canonical" href="https://quinntessentialsystemsinc.freshdesk.com/support/solutions" /> 
 
 <!-- Responsive setting -->
 <link rel="apple-touch-icon" href="/assets/touch/touch-icon-iphone.png" />
@@ -31,7 +31,7 @@
 <!-- End meta tag for CSRF token -->
 
 <!-- Fav icon for portal -->
-<link rel='shortcut icon' href='/assets/misc/favicon.ico?702017' />
+<link rel='shortcut icon' href='images/qsys-favicon.png' />
 
 <!-- Base stylesheet -->
 <link href="https://assets7.freshdesk.com/assets/cdn/portal_utils-96ae1eecb93dd3dc3407fc80d863d166.css" media="screen" rel="stylesheet" type="text/css" />
@@ -57,64 +57,66 @@
 <head/>
 
 <body>
-  <div class="page">
     <header class="banner">
       <div class="container">
 	    <div class="banner-wrapper">
 	      <div class="banner-title">
-		    <a href= '/support/home'class='portal-logo'>
+		    <a href= '/support/home' class='portal-logo'>
 		      <span class="portal-img"><i></i>
 			    <img src='https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/25000012566/logo/aubGZ_5pXXfNhobNIXksI-hn76XUGrQfqg.jpg' alt="Logo" onerror="default_image_error(this)" data-type="logo" />
 			  </span>
 			</a>
-<!-- <h1 class="ellipsis heading">Quinntessential Systems Inc</h1> -->
-		    <nav class="banner-nav">
-		      <div class="welcome">Welcome <b>Support</b> 
-		      </div>  <b><a href="/">Agent Portal</a></b> |  <b><a href="/support/profile/edit">Edit profile</a></b> | <b><a href="/logout">Sign out</a></b>
-		    </nav>
+			 <section class="banner-position">  
+			    <nav class="banner-nav">
+			     <b><a href="/">Agent Portal</a></b> |  <b><a href="/support/profile/edit">Edit profile</a></b> | <b><a href="/logout">Sign out</a></b>
+			    </nav>
+			  </section>
+			 <div id="search_section">
+            <!-- Search and page links for the page -->
+			    <form class="hc-search-form" autocomplete="off" action="/support/search">
+				  <div class="hc-search-input">
+				    <label for="support-search-input" class="hide">Enter your search term here...
+				    </label>
+					  <input placeholder="Enter your search term here..." type="text" 
+						name="term" class="special" value="" 
+			            rel="page-search" data-max-matches="10" id="support-search-input">
+				  </div>
+				    <div class="hc-search-button">
+					  <button class="btn btn-primary" type="submit" autocomplete="off">
+					  <p id="btn-text">Submit</p>
+						<i class="mobile-icon-search hide-tablet"></i>
+						  <span class="hide-in-mobile">Search</span>
+					  </button>	
+				    </div>
+		        </form>
+             </div>
 		  </div>
         </div>
-    </header>
-    <div id="search_section">
-      <div class="container">
-            <!-- Search and page links for the page -->
-	    <form class="hc-search-form" autocomplete="off" action="/support/search" id="hc-search-form">
-		  <div class="hc-search-input">
-		    <label for="support-search-input" class="hide">Enter your search term here...
-		    </label>
-			  <input placeholder="Enter your search term here..." type="text" 
-				name="term" class="special" value="" 
-	            rel="page-search" data-max-matches="10" id="support-search-input">
-		  </div>
-		    <div class="hc-search-button">
-			  <button class="btn btn-primary" type="submit" autocomplete="off">
-				<i class="mobile-icon-search hide-tablet"></i>
-				  <span class="hide-in-mobile">Search</span>
-			  </button>	
-		  </div>
-        </form>
       </div>
-    </div>
+    </header>
+   
 <!-- Notification Messages -->
   <div class="alert alert-with-close notice" id="noticeajax" style="display:none;">
   </div> 
-  <div id="slider">
+  <!-- <div id="slider">
   	<figure>
     <img src="images/CShip_elevator.jpg">
     <img src="images/CShip_robot.jpg">
     <img src="images/CShip_swing-pod.jpg">
  	</figure> 
-  </div>
+  </div> -->
+  </body>
+
   <footer class="footer rounded-6">
   <nav>  
     <div id="f_middle">
-    	<h1 class="tile">Support</h1>
+    	<h1 class="tile"><a href="/support/support"a>Support</h1>
         <h1 class="tile"><a href="/support/home">home</a></h1>
         <h1 class="tile"><a href="/support/tickets/new">create ticket</a></h1>
         <h1 class="tile"><a href="/support/tickets">check ticket status</a></h1>
         <h1 class="tile"><a href="/support/solutions">solutions</a></h1>
         <h1 class="tile"><a href="/support/discussions">forums</a></h1>
-        <h1 class="tile">Other links</h1>
+        <h1 class="tile"><a href="/support/otherlinks">Other links</h1>
         <h1 class="tile"><a href="#">Visit our Website</a></h1>
         <h1 class="tile"><a href="#">Contact Us</a></h1>
         <h1 class="tile"><a href="#">Our Work</a></h1>
@@ -122,8 +124,8 @@
   </nav>  
     <div class="f_bottom">
         <div id="copyright">&copy;2017 Quintessential Systems. All Rights Reserved.<br>Hosted by Freshdesk
-     </div>
-      </div>
+        </div>
+    </div>
     </div>
 </footer>
 
@@ -172,7 +174,6 @@
 //]]>
 
 </script> 	
-</body>
 </html>
 	<!-- <nav class="footer-links">
 					<a href="/support/home" class="active">Home</a>

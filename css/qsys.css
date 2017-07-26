@@ -38,7 +38,7 @@ input, button, select, textarea{
 }
 .container {
 	margin: 0 auto;
-	max-width: 1000px;
+	max-width: 100%;
 	padding: 0 20px;
 	position: relative;
 }
@@ -46,7 +46,6 @@ input, button, select, textarea{
 	-o-border-radius: 0;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
-	background-color: #F5F5F5;
 	-o-box-shadow: 1px 5px 5px -3px #CCCCCC;
 	-webkit-box-shadow: 1px 5px 5px -3px #CCCCCC;
 	-moz-box-shadow: 1px 5px 5px -3px #CCCCCC;
@@ -57,18 +56,17 @@ input, button, select, textarea{
 	height: auto;
 	width: 100%;
 	padding: 20px 20px 0px 20px;
-	float: left;
 	background: darkblue;
 }
 .banner .banner-wrapper {
 	height: auto;
+	display: flex;
 }
 .banner .banner-title {
-	float: left;
-    display: inline;
+    display: flex-inline;
 }
 .banner-title {
-	width: 95%;
+	width: 200%;
 }
 .portal-img {
 	/*display: flex;
@@ -106,9 +104,12 @@ input, button, select, textarea{
     background: darkblue;
 }
 #search_section {
+	width: 40%;
+	margin-left: 20px;
 	overflow: hidden;
-	clear: both;
 	position: relative;
+	float: right;
+	right: 10%;
 	height: 65px;
 	background-color: #404040;
 	border-bottom: 1px solid #fff;
@@ -130,7 +131,7 @@ input, button, select, textarea{
 	padding: 5px;
 	border: 0 none;
 	text-shadow: 0px 1px 1px #000;
-	width: 260px;
+	width: 250%;
 	background-color: #404040;
 	-o-box-shadow: none;
 	-webkit-box-shadow: none;
@@ -143,15 +144,11 @@ input, button, select, textarea{
 }
 .hc-search-button {
 	position: absolute;
-	top: 22px;
-	left: 20px;
-	width: 29px;
-	height: 29px;
 }
 .hc-search-button .btn-primary {
-	background: url("http://54.225.115.65/freshdesk/theme_three_images/search.png") no-repeat;
-	width: 29px;
-	height: 29px;
+	width: 80px;
+	height: 40px;
+	background: yellow;
 	border: 0 none;
 	-o-box-shadow: none;
 	-webkit-box-shadow: none;
@@ -161,6 +158,10 @@ input, button, select, textarea{
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	border-radius: 0;
+}
+#btn-text {
+	color: red;
+	margin: auto;
 }
 .btn-primary:hover {
 	background-position: 0 0;
@@ -215,7 +216,7 @@ input, button, select, textarea{
 	text-transform: uppercase;
 	word-spacing: 20px;
 }
-.buttons .btns {
+.buttons .btn {
 	background-color: rgba(0, 0, 0, 0);
 	border: 1px solid #FFFFFF;
 	color: #FFFFFF;
@@ -227,7 +228,7 @@ input, button, select, textarea{
 	text-transform: uppercase;
 	width: 225px;
 }
-.buttons .btns:hover {
+.buttons .btn:hover {
 	background-color: #FF4141;
 	border: 1px solid #FF4141;
 	box-shadow: 0 1px 3px #000000;
@@ -1159,7 +1160,7 @@ a, input[type="submit"], input[type="reset"], input[type="button"], button, .box
 	background: none;
 	padding: 0;
 }
-.buttons .btns {
+.buttons .btn {
 	margin: 55px 25px 0;
 }
 .mobile-nav {
@@ -1248,7 +1249,7 @@ a, input[type="submit"], input[type="reset"], input[type="button"], button, .box
 		margin: 0;
 		padding:30px 0 20px;
 	}
-	#freshdesk_support .buttons .btns{
+	#freshdesk_support .buttons .btn{
 		margin: 0 5px 10px 0;
 	}
 	.section2 {
@@ -1341,9 +1342,18 @@ a, input[type="submit"], input[type="reset"], input[type="button"], button, .box
 	margin: 20px;
     padding: 20px;
     background-color: darkblue;
-    color: white;
     text-align: center;
-
+    border-radius: 20px;
+    -webkit-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+.tile:hover {
+	/*margin: 0;*/
+	box-shadow: 10px 10px 5px black;
+	text-align: center;
+	box-sizing: border-box;
 }
 @vdr slider {
 
