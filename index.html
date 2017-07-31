@@ -49,6 +49,9 @@
 <!-- Including syntexhighlighter for portal -->
 <script src="https://assets3.freshdesk.com/assets/cdn/prism-8d8d1afbef6af9f0b0d41b7716683131.js" type="text/javascript"></script>
 
+<!-- Font-awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!-- Qsys stylesheet -->
 <link href="css/qsys.css" rel="stylesheet">
 
@@ -58,68 +61,66 @@
 
 <body>
     <header class="banner">
-      <div class="container">
-	    <div class="banner-wrapper">
-	      <div class="banner-title">
-		    <a href= '/support/home' class='portal-logo'>
-		      <span class="portal-img"><i></i>
-			    <img src='https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/25000012566/logo/aubGZ_5pXXfNhobNIXksI-hn76XUGrQfqg.jpg' alt="Logo" onerror="default_image_error(this)" data-type="logo" />
-			  </span>
-			</a>
-			 <section class="banner-position">  
-			    <nav class="banner-nav">
-			     <b><a href="/">Agent Portal</a></b> |  <b><a href="/support/profile/edit">Edit profile</a></b> | <b><a href="/logout">Sign out</a></b>
-			    </nav>
-			  </section>
-			 <div id="search_section">
-            <!-- Search and page links for the page -->
-			    <form class="hc-search-form" autocomplete="off" action="/support/search">
-				  <div class="hc-search-input">
-				    <label for="support-search-input" class="hide">Enter your search term here...
-				    </label>
-					  <input placeholder="Enter your search term here..." type="text" 
-						name="term" class="special" value="" 
-			            rel="page-search" data-max-matches="10" id="support-search-input">
-				  </div>
-				    <div class="hc-search-button">
-					  <button class="btn btn-primary" type="submit" autocomplete="off">
-					  <p id="btn-text">Submit</p>
-						<i class="mobile-icon-search hide-tablet"></i>
-						  <span class="hide-in-mobile">Search</span>
-					  </button>	
-				    </div>
-		        </form>
-             </div>
-		  </div>
-        </div>
-      </div>
+	    <a href= '/support/home' class='portal-logo'>
+		    <img src='images/qsys_logo.png' alt="Logo" onerror="default_image_error(this)" data-type="logo" />
+		</a> 
+		    <nav class="banner-nav">
+		     <b><a href="/">Agent Portal</a></b> |  <b><a href="/support/profile/edit">Edit profile</a></b> | <b><a href="/logout">Sign out</a></b>
+		    </nav>
+		 <div id="search_section">
+	    <!-- Search and page links for the page -->
+		    <form class="hc-search-form" autocomplete="off" action="/support/search">
+			  <div class="hc-search-input">
+			    <label for="support-search-input" class="hide">Enter your search term here...
+			    </label>
+				  <input placeholder="Enter your search term here..." type="text" 
+					name="term" class="special" value="" 
+		            rel="page-search" data-max-matches="10" id="support-search-input">
+			  </div>
+			    <div class="hc-search-button">
+				  <button class="btn btn-primary" type="submit" autocomplete="off">
+				  <p id="btn-text">Submit</p>
+					<i class="mobile-icon-search hide-tablet"></i>
+					  <span class="hide-in-mobile">Search</span>
+				  </button>	
+			    </div>
+	        </form>
+	     </div>
     </header>
-   
-<!-- Notification Messages -->
+   <!-- Notification Messages -->
   <div class="alert alert-with-close notice" id="noticeajax" style="display:none;">
   </div> 
-  <!-- <div id="slider">
-  	<figure>
-    <img src="images/CShip_elevator.jpg">
-    <img src="images/CShip_robot.jpg">
-    <img src="images/CShip_swing-pod.jpg">
- 	</figure> 
-  </div> -->
+ <!-- Image Slider -->	
+	<div id="slider">
+  	   <figure>
+  	     <div class="slide">
+	      <img src="images/CShip_elevator.jpg">
+	     </div>
+	     <div class="slide">
+	      <img src="images/CShip_robot.jpg">
+	     </div>
+	     <div class="slide">
+	      <img src="images/CShip_swing-pod.jpg">
+	     </div>
+ 	   </figure> 
+	</div>
+<div class="space">
+</div>
   </body>
 
   <footer class="footer rounded-6">
   <nav>  
     <div id="f_middle">
-    	<h1 class="tile"><a href="/support/support"a>Support</h1>
-        <h1 class="tile"><a href="/support/home">home</a></h1>
-        <h1 class="tile"><a href="/support/tickets/new">create ticket</a></h1>
-        <h1 class="tile"><a href="/support/tickets">check ticket status</a></h1>
-        <h1 class="tile"><a href="/support/solutions">solutions</a></h1>
-        <h1 class="tile"><a href="/support/discussions">forums</a></h1>
-        <h1 class="tile"><a href="/support/otherlinks">Other links</h1>
-        <h1 class="tile"><a href="#">Visit our Website</a></h1>
-        <h1 class="tile"><a href="#">Contact Us</a></h1>
-        <h1 class="tile"><a href="#">Our Work</a></h1>
+    	<h1 class="tile"><a href="/support/support"a><i class="fa fa-life-ring fa-2x" aria-hidden="true"></i><br>Support</a></h1>
+        <h1 class="tile"><a href="/support/home"><i class="fa fa-home fa-2x" aria-hidden="true"></i><br>home</a></h1>
+        <h1 class="tile"><a href="/support/tickets/new"><i class="fa fa-paint-brush fa-2x" aria-hidden="true"></i><br>create ticket</a></h1>
+        <h1 class="tile"><a href="/support/tickets"><i class="fa fa-ticket fa-2x" aria-hidden="true"></i><br>check ticket status</a></h1>
+        <h1 class="tile"><a href="/support/solutions"><i class="fa fa-flask fa-2x" aria-hidden="true"></i><br>solutions</a></h1>
+        <h1 class="tile"><a href="/support/discussions"><i class="fa fa-forumbee fa-2x" aria-hidden="true"></i><br>forums</a></h1>
+        <h1 class="tile"><a href="/support/otherlinks"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a><br>Other links</h1>
+        <h1 class="tile"><a href="#"><i class="fa fa-plane fa-2x" aria-hidden="true"></i></a><br>Visit our Website</h1>
+        <h1 class="tile"><a href="#"><i class="fa fa-phone fa-2x" aria-hidden="true"></i><br>Contact Us</a></h1>
+        <h1 class="tile"><a href="#"><i class="fa fa-briefcase fa-2x" aria-hidden="true"></i><br>Our Work</a></h1>
     </div>
   </nav>  
     <div class="f_bottom">
@@ -190,3 +191,26 @@
 				<p>We’ll also assume you agree to the way we use cookies and are ok with it as described in our <a href="http://freshdesk.com/privacy/" target="_blank">Privacy Policy</a>, unless you choose to disable them altogether through your browser. </p>
 			</textarea></div> 
 	</nav> -->
+
+<!-- Code to study to make a banner.  From Germane solutions.
+
+<div class="soliloquy-outer-container" data-soliloquy-loaded="0">
+
+<div aria-live="polite" id="soliloquy-container-5241" class="soliloquy-container soliloquy-transition-fade soliloquy-fade soliloquy-controls-active soliloquy-arrows-active  soliloquy-theme-base" style="max-width:1920px;max-height:600px;margin:0 auto 0px;max-width:100%;max-height:none;">
+
+<ul id="soliloquy-5241" class="soliloquy-slider soliloquy-slides soliloquy-wrap soliloquy-clear">
+  <li aria-hidden="true" class="soliloquy-item soliloquy-item-1 soliloquy-id-5242 soliloquy-image-slide" draggable="false" style="list-style:none;">
+  <img id="soliloquy-image-5242" class="soliloquy-image soliloquy-image-1" src="http://www.germane.com/wp-content/uploads/Germane-home-banners-3.jpg" alt="Germane-home-banners-3" />
+  </li>
+  <li aria-hidden="true" class="soliloquy-item soliloquy-item-2 soliloquy-id-5106 soliloquy-image-slide" draggable="false" style="list-style:none;">
+  <img id="soliloquy-image-5106" class="soliloquy-image soliloquy-image-2 soliloquy-preload" src="http://www.germane.com/wp-content/plugins/soliloquy/assets/css/images/holder.gif" data-soliloquy-src="http://www.germane.com/wp-content/uploads/netapp-homead.jpg" alt="netapp-homead" />
+  </li>
+  <li aria-hidden="true" class="soliloquy-item soliloquy-item-3 soliloquy-id-5105 soliloquy-image-slide" draggable="false" style="list-style:none;">
+  <img id="soliloquy-image-5105" class="soliloquy-image soliloquy-image-3 soliloquy-preload" src="http://www.germane.com/wp-content/plugins/soliloquy/assets/css/images/holder.gif" data-soliloquy-src="http://www.germane.com/wp-content/uploads/out-of-the-data-center2.jpg" alt="out-of-the-data-center2" />
+  </li>
+  </ul>
+
+  </div><noscript><style type="text/css" scoped>#soliloquy-container-5241{opacity:1}#soliloquy-container-5241 li > .soliloquy-caption{display:none}#soliloquy-container-5241 li:first-child > .soliloquy-caption{display:block}</style><div class="soliloquy-no-js" style="display:none;visibility:hidden;height:0;line-height:0;opacity:0;"><img class="soliloquy-image soliloquy-no-js-image" src="http://www.germane.com/wp-content/uploads/Germane-home-banners-3.jpg" alt="Germane-home-banners-3" /><img class="soliloquy-image soliloquy-no-js-image" src="http://www.germane.com/wp-content/uploads/netapp-homead.jpg" alt="netapp-homead" /><img class="soliloquy-image soliloquy-no-js-image" src="http://www.germane.com/wp-content/uploads/out-of-the-data-center2.jpg" alt="out-of-the-data-center2" /></div></noscript>
+  </div>
+
+  -->
