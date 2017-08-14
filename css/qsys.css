@@ -63,8 +63,7 @@ input, button, select, textarea{
 }
 .banner-nav {
 	float: right;
-	background: yellow;
-	padding: 10px;
+	margin: 25px 0 0 0;
 }
 .welcome {
 	display: none;
@@ -83,7 +82,7 @@ input, button, select, textarea{
 	display: block;
 	width: 40%;
 	height: 40px;
-	margin-left: 10%;
+	margin: 20px 0 0 15%;
 	background-color: #404040;
 	border: none;
 	overflow: hidden;
@@ -95,8 +94,7 @@ input, button, select, textarea{
 }
 .hc-search-input input.special {
 	font-size: 16px;
-	font-style: italic;
-	color: #fff;
+	color: #ffffff;
 	border: 0 none;
 	text-shadow: 0px 1px 1px #000;
 	width: 200%;
@@ -109,13 +107,17 @@ input, button, select, textarea{
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 }
+input#support-search-input.special {
+	border: none;
+	border-style: none;
+}
 .hc-search-button .btn-primary {
 	display: block;
 	float: right;
 	width: 80px;
 	height: 40px;
 	position:relative;
-	background: yellow;
+	background: white;
 	border: 0 none;
 	box-shadow: none;
 	border-radius: 0;
@@ -126,16 +128,16 @@ input, button, select, textarea{
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 }
-.hc-search-button .hide-in-mobile {
-	display: none;
-}
 #btn-text {
 	color: red;
 	margin: auto;
 }
 .btn-primary:hover {
 	background-position: 0 0;
-	background-color: rgba(0,0,0,0);
+	background-color: yellow;
+}
+.hc-search-button .hide-in-mobile {
+	display: none;
 }
 .heading {
 	font-family: 'Open Sans',sans-serif;
@@ -1319,7 +1321,7 @@ a, input[type="submit"], input[type="reset"], input[type="button"], button, .box
 	display: block;
 }
 #support-search-input {
-	padding: 8px;
+	padding: 8px 21.5px;
 	border: none;
 }
 
@@ -1351,32 +1353,44 @@ a, input[type="submit"], input[type="reset"], input[type="button"], button, .box
 	left: 0;
 	text-align: left;
 	font-size: 0;
-	animation: 30s slidy infinite;
+	animation: 40s slidy infinite;
 }
 @keyframes slidy {
 
 0% {
 	left: 0%;
 }
-4% {
+2% {
 	left: 0%;
 }
-14% {
+8% {
 	left: 0%;
 }
-16% {
+9% {
+	left: 0%;
+}
+10% {
+	left: 0%;
+}
+12% {
 	left: -100%;
 }
-26% {
+20% {
 	left: -100%;
 }
-28% {
+22% {
 	left: -100%;
 }
-38% {
+30% {
+	left: -100%;
+}
+32% {
 	left: -100%;
 }
 40% {
+	left: -200%;
+}
+42% {
 	left: -200%;
 }
 50% {
@@ -1385,25 +1399,34 @@ a, input[type="submit"], input[type="reset"], input[type="button"], button, .box
 52% {
 	left: -200%;
 }
-62% {
+60% {
 	left: -200%;
 }
-64% {
+62% {
 	left: -100%;
 }
-74% {
+70% {
 	left: -100%;
 }
 76% {
 	left: -100%;
 }
-86% {
-	left: 0%;
+80% {
+	left: -100%;
+}
+82% {
+	left: -100%;
 }
 88% {
 	left: 0%;
 }
-90% {
+92% {
+	left: 0%;
+}
+94% {
+	left: 0%;
+}
+96% {
 	left: 0%;
 }
 100% {
