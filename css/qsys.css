@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import "modules/_slideshow";
+
 a, input[type="submit"], input[type="reset"], input[type="button"], button {
 	-o-transition: all 0.1s linear 0s;
 	-webkit-transition: all 0.1s linear 0s;
